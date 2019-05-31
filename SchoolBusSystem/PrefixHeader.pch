@@ -1,0 +1,84 @@
+//
+//  PrefixHeader.pch
+//  FpdCarInCube
+//
+//  Created by WXC on 2017/4/10.
+//  Copyright © 2017年 jiaoyin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/*** 如果希望某些内容能拷贝到任何源代码文件(OC\C\C++等), 那么就不要写在#ifdef __OBJC__和#endif之间 ***/
+
+
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#ifdef __OBJC__
+#import <AFNetworking/AFNetworking.h>
+#import <CoreLocation/CoreLocation.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <MJExtension/MJExtension.h>
+#import "HMSingleton.h"
+#import "JYConstant.h"
+#import "JYBaseEntity.h"
+#import "JYURLManager.h"
+#import "Reachability.h"
+#import "JYNavigationController.h"
+#import "HomeController.h"
+#import "UIWindow+JYUIWindow.h"
+#import "UIView+XMGExtension.h"
+#import "JYNetworkTools.h"
+#import "UIBarButtonItem+XMGExtension.h"
+#import "NSDictionary+Property.h"
+#import "NSDictionary+Safe.h"
+#import "Tools.h"
+#import "JYApiConfig.h"
+#import "OAuthAccountTool.h"
+#import <MJRefresh/MJRefresh.h>
+
+
+#define WXCWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"%@/%@.plist",NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject, filename] atomically:YES];
+
+/*** 当前系统版本判断 ***/
+#define iOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= (version))
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define JYLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define JYLog(...)
+#endif
+
+#define JYLogFunc JYLog(@"");
+
+
+/*** 颜色 ***/
+#define JYColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define JYColor(r, g, b) JYColorA((r), (g), (b), 255)
+#define JYRandomColor JYColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define JYrayColor(v) JYColor((v), (v), (v))
+#define JYCommonBgColor JYrayColor(242)
+#define JYCommonColor JYColor(54, 204, 161)
+#define JYCommonLineColor JYrayColor(235)
+#define JYCommonLineBGColor JYColor(239,240,241)
+#define JYCommonTextColor JYColor(134,135,136)
+
+#define JY120Color JYColor(187,0,0)
+#define JY100Color JYColor(244,28,13)
+#define JY80Color JYColor(255,172,0)
+#define JY0Color JYColor(0,189,0)
+
+
+#define JYHomeTitleColor JYColor(21,120,228)
+
+
+#define Screen_height   [[UIScreen mainScreen] bounds].size.height
+#define Screen_width   [[UIScreen mainScreen] bounds].size.width
+#define KSPACE_10      10
+#define SIphoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(812.f, 375.f), [UIScreen mainScreen].bounds.size))
+
+#define SstatusBarH (SIphoneX?44:20)
+#define SsafeBarH (SIphoneX?34:0)
+#endif
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActiononeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ag1-sV-eeQ">
+                        <rect key="frame" x="15" y="0.0" width="290" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页搜索和底部" translatesAutoresizingMaskIntoConstraints="NO" id="Yaf-4A-6ST">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disclosure_Indicator_66_-path" translatesAutoresizingMaskIntoConstraints="NO" id="Cys-9F-jx7">
+                                <rect key="frame" x="263.5" y="18" width="13.5" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cys-9F-jx7" secondAttribute="height" multiplier="1.65:1" id="Bqb-KS-ufr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驾驶行为" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcs-RG-3ss">
+                                <rect key="frame" x="15" y="13" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Jcs-RG-3ss" firstAttribute="centerY" secondItem="Yaf-4A-6ST" secondAttribute="centerY" id="HCb-g0-Ysx"/>
+                            <constraint firstItem="Yaf-4A-6ST" firstAttribute="leading" secondItem="ag1-sV-eeQ" secondAttribute="leading" id="KbM-hs-0VN"/>
+                            <constraint firstAttribute="trailing" secondItem="Cys-9F-jx7" secondAttribute="trailing" constant="13" id="O61-zu-46d"/>
+                            <constraint firstAttribute="bottom" secondItem="Yaf-4A-6ST" secondAttribute="bottom" id="Wbu-t5-k0B"/>
+                            <constraint firstItem="Cys-9F-jx7" firstAttribute="centerY" secondItem="Yaf-4A-6ST" secondAttribute="centerY" id="Yzs-Bg-cbX"/>
+                            <constraint firstAttribute="trailing" secondItem="Yaf-4A-6ST" secondAttribute="trailing" id="gqV-C6-J8O"/>
+                            <constraint firstItem="Jcs-RG-3ss" firstAttribute="leading" secondItem="ag1-sV-eeQ" secondAttribute="leading" constant="15" id="tKZ-ga-LL5"/>
+                            <constraint firstItem="Yaf-4A-6ST" firstAttribute="top" secondItem="ag1-sV-eeQ" secondAttribute="top" id="w9c-S7-uKq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ag1-sV-eeQ" secondAttribute="bottom" id="4bv-PR-5wn"/>
+                    <constraint firstAttribute="trailing" secondItem="ag1-sV-eeQ" secondAttribute="trailing" constant="15" id="8aW-vb-Zqj"/>
+                    <constraint firstItem="ag1-sV-eeQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H3t-bR-3f4"/>
+                    <constraint firstItem="ag1-sV-eeQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="RtK-QN-qmU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="label" destination="Jcs-RG-3ss" id="hFb-sT-W0y"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Disclosure_Indicator_66_-path" width="13" height="8"/>
+        <image name="首页搜索和底部" width="359" height="54"/>
+    </resources>
+</document>

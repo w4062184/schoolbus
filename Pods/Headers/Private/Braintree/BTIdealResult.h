@@ -1,0 +1,1 @@
+../../../Braintree/BraintreePaymentFlow/Public/Ideal/BTIdealResult.h

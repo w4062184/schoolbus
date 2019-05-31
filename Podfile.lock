@@ -1,0 +1,65 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - Braintree/Apple-Pay (4.13.0):
+    - Braintree/Core
+  - Braintree/Card (4.13.0):
+    - Braintree/Core
+  - Braintree/Core (4.13.0)
+  - Braintree/PaymentFlow (4.13.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/UnionPay (4.13.0):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (6.1.0):
+    - BraintreeDropIn/DropIn (= 6.1.0)
+  - BraintreeDropIn/DropIn (6.1.0):
+    - Braintree/Card (~> 4.11)
+    - Braintree/Core (~> 4.11)
+    - Braintree/PaymentFlow (~> 4.11)
+    - Braintree/UnionPay (~> 4.11)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (6.1.0)
+  - JCore (1.1.7)
+  - JPush (3.0.8):
+    - JCore (~> 1.1.7)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Braintree/Apple-Pay
+  - BraintreeDropIn
+  - JPush
+  - MJExtension
+  - MJRefresh
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  Braintree: 1211f518082e9cb1b9cf4b94e646c12a98012061
+  BraintreeDropIn: 2e8bba4facf6cc925176637030454d8308223b95
+  JCore: f7459c81c135281a874a6beafdd321666adcc834
+  JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: af80ba25cd37b88dc562eefb2ea7c1d79cbb7402
+
+COCOAPODS: 1.4.0

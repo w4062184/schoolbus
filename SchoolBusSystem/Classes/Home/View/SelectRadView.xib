@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gjF-Fs-MGz" customClass="SelectRadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离上车点多少米提醒我？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7C-tQ-4ks">
+                    <rect key="frame" x="15" y="15" width="184" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmG-BM-J25">
+                    <rect key="frame" x="251" y="13" width="24" height="24"/>
+                    <state key="normal" image="-"/>
+                    <connections>
+                        <action selector="dele:" destination="gjF-Fs-MGz" eventType="touchUpInside" id="Qoc-99-TEH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN3-7F-oON">
+                    <rect key="frame" x="336" y="13" width="24" height="24"/>
+                    <state key="normal" image="+"/>
+                    <connections>
+                        <action selector="add:" destination="gjF-Fs-MGz" eventType="touchUpInside" id="IVv-Y7-noE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvV-w1-bHj">
+                    <rect key="frame" x="285" y="15" width="41" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="9Cr-2R-wuf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.68627450980392157" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QPi-Fs-Jxh" firstAttribute="bottom" secondItem="a7C-tQ-4ks" secondAttribute="bottom" constant="15" id="0Wa-yM-bmb"/>
+                <constraint firstItem="a7C-tQ-4ks" firstAttribute="leading" secondItem="QPi-Fs-Jxh" secondAttribute="leading" constant="15" id="Al6-wf-OdL"/>
+                <constraint firstItem="PN3-7F-oON" firstAttribute="leading" secondItem="EvV-w1-bHj" secondAttribute="trailing" constant="10" id="BWf-s2-Plz"/>
+                <constraint firstItem="QPi-Fs-Jxh" firstAttribute="bottom" secondItem="QmG-BM-J25" secondAttribute="bottom" constant="13" id="CZI-XM-CfQ"/>
+                <constraint firstItem="QPi-Fs-Jxh" firstAttribute="bottom" secondItem="PN3-7F-oON" secondAttribute="bottom" constant="13" id="K6N-II-v0X"/>
+                <constraint firstItem="QPi-Fs-Jxh" firstAttribute="trailing" secondItem="PN3-7F-oON" secondAttribute="trailing" constant="15" id="Nhq-rR-qdb"/>
+                <constraint firstItem="QmG-BM-J25" firstAttribute="top" secondItem="QPi-Fs-Jxh" secondAttribute="top" constant="13" id="fVT-QV-dhH"/>
+                <constraint firstItem="EvV-w1-bHj" firstAttribute="leading" secondItem="QmG-BM-J25" secondAttribute="trailing" constant="10" id="kQh-Pl-DoW"/>
+                <constraint firstItem="PN3-7F-oON" firstAttribute="top" secondItem="QPi-Fs-Jxh" secondAttribute="top" constant="13" id="olU-8p-Yen"/>
+                <constraint firstItem="EvV-w1-bHj" firstAttribute="centerY" secondItem="QPi-Fs-Jxh" secondAttribute="centerY" id="qo5-tb-Byn"/>
+                <constraint firstItem="a7C-tQ-4ks" firstAttribute="top" secondItem="QPi-Fs-Jxh" secondAttribute="top" constant="15" id="yaf-NE-8Ui"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="QPi-Fs-Jxh"/>
+            <connections>
+                <outlet property="jia" destination="PN3-7F-oON" id="RZb-HW-rwN"/>
+                <outlet property="jian" destination="QmG-BM-J25" id="HO3-Dn-yof"/>
+                <outlet property="label" destination="a7C-tQ-4ks" id="feu-VX-X0F"/>
+                <outlet property="radiuslab" destination="EvV-w1-bHj" id="75Z-9L-H9H"/>
+            </connections>
+            <point key="canvasLocation" x="-238.5" y="-134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="+" width="24" height="24"/>
+        <image name="-" width="24" height="24"/>
+    </resources>
+</document>

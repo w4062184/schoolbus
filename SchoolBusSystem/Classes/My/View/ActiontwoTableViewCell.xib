@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActiontwoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APT-nu-afE">
+                        <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驾驶行为" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJe-2N-WWX">
+                                <rect key="frame" x="108.5" y="11" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disclosure_Indicator_66_-pat" translatesAutoresizingMaskIntoConstraints="NO" id="yp7-Re-YYe">
+                                <rect key="frame" x="264" y="17" width="13" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yp7-Re-YYe" secondAttribute="height" multiplier="13:8" id="mCk-BA-gtR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9v-mr-nEp">
+                                <rect key="frame" x="0.0" y="41.5" width="290" height="1"/>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2Xg-b8-OBs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s9v-mr-nEp" secondAttribute="bottom" constant="1" id="0Pr-4N-5Rt"/>
+                            <constraint firstAttribute="trailing" secondItem="yp7-Re-YYe" secondAttribute="trailing" constant="13" id="2OP-Vd-BK9"/>
+                            <constraint firstItem="LJe-2N-WWX" firstAttribute="centerY" secondItem="APT-nu-afE" secondAttribute="centerY" id="COp-ON-Plr"/>
+                            <constraint firstAttribute="trailing" secondItem="s9v-mr-nEp" secondAttribute="trailing" id="Oxy-nC-JuX"/>
+                            <constraint firstItem="yp7-Re-YYe" firstAttribute="centerY" secondItem="APT-nu-afE" secondAttribute="centerY" id="sdL-LM-MaY"/>
+                            <constraint firstItem="LJe-2N-WWX" firstAttribute="centerX" secondItem="APT-nu-afE" secondAttribute="centerX" id="tFu-Eq-Gos"/>
+                            <constraint firstItem="s9v-mr-nEp" firstAttribute="leading" secondItem="APT-nu-afE" secondAttribute="leading" id="z97-ON-vRt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="APT-nu-afE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8CD-Ke-cvC"/>
+                    <constraint firstAttribute="bottom" secondItem="APT-nu-afE" secondAttribute="bottom" id="ANp-1U-dnS"/>
+                    <constraint firstItem="APT-nu-afE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bnc-kK-kMk"/>
+                    <constraint firstAttribute="trailing" secondItem="APT-nu-afE" secondAttribute="trailing" constant="15" id="mA3-tM-MuT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addview" destination="APT-nu-afE" id="22s-Yv-Amc"/>
+                <outlet property="label" destination="LJe-2N-WWX" id="JIn-QJ-hrs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Disclosure_Indicator_66_-pat" width="13" height="8"/>
+    </resources>
+</document>
